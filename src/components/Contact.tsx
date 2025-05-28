@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
   ];
 
   const socialLinks = [
-    { icon: <Github size={20} />, url: "https://github.com/ahmadfzn15" },
+    { icon: <Github size={20} />, url: "https://github.com/ahmadfznn" },
     {
       icon: <Linkedin size={20} />,
       url: "https://www.linkedin.com/in/ahmad-fauzan-8995682a5/",
