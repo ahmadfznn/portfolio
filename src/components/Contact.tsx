@@ -26,19 +26,46 @@ const Contact: React.FC = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // This would be connected to an actual backend in a real implementation
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-    // Show success message (would be implemented properly in a real app)
-    alert("Message sent successfully!");
+
+    try {
+      const response = await fetch("https://formspree.io/f/xqalqgll", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        const data = await response.json();
+        alert(
+          `Failed to send message: ${
+            data.errors
+              ? data.errors
+                  .map((err: { message: any }) => err.message)
+                  .join(", ")
+              : "Unknown error"
+          }`
+        );
+        console.error("Formspree error:", data);
+      }
+    } catch (error) {
+      alert(
+        "There was a problem sending your message. Please try again later."
+      );
+      console.error("Network error:", error);
+    }
   };
 
   const contactInfo = [

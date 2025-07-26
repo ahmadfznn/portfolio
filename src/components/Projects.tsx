@@ -56,6 +56,7 @@ const Projects: React.FC = () => {
               <div className="flex gap-4">
                 <a
                   href={project.githubUrl}
+                  target="_blank"
                   className="flex items-center gap-1 text-sm text-text-secondary hover:text-accent-blue transition-colors"
                 >
                   <Github size={16} />

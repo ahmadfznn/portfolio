@@ -16,7 +16,7 @@ export const projects: Project[] = [
     image:
       "https://images.pexels.com/photos/12935074/pexels-photo-12935074.jpeg",
     tags: ["Flutter", "Laravel", "MySQL", "RESTful API"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/ahmadfznn/cashier",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     image:
       "https://images.pexels.com/photos/230554/pexels-photo-230554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     tags: ["Flutter", "Firebase", "Node.js", "RESTful API"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/ahmadfznn/chat",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const projects: Project[] = [
       "A system to manage employee records, attendance, payroll, and leave requests with user-friendly admin controls.",
     image: "/employee.png",
     tags: ["React.js", "Node.js", "MySQL", "RESTful API"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/ahmadfznn/employee",
   },
   {
     id: 4,
@@ -44,6 +44,15 @@ export const projects: Project[] = [
       "A platform to manage and track student tuition payments, generate invoices, and send payment reminders automatically.",
     image: "/ai.png",
     tags: ["React.js", "Laravel", "Tailwind CSS", "RESTful API"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/ahmadfznn/NancyAI",
+  },
+  {
+    id: 5,
+    title: "Reminder",
+    description:
+      "Forget missing anything! This mobile reminder app keeps your life organized, ensuring you're always on top of tasks and appointments.",
+    image: "",
+    tags: ["Flutter", "Kotlin"],
+    githubUrl: "https://github.com/ahmadfznn/reminder",
   },
 ];

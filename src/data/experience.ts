@@ -4,7 +4,7 @@ export interface TimelineItem {
   organization: string;
   period: string;
   description: string;
-  type: 'work' | 'internship' | 'education';
+  type: "work" | "internship" | "education";
 }
 
 export const timelineItems: TimelineItem[] = [
@@ -12,26 +12,28 @@ export const timelineItems: TimelineItem[] = [
     id: 1,
     title: "Full Stack Developer",
     organization: "Berkatsoft",
-    period: "2024 - Present",
-    description: "Lead the frontend development team in creating responsive, accessible web applications. Implemented performance optimizations that improved load times by 40%. Mentored junior developers and established coding standards.",
-    type: "work"
+    period: "2024 - 2025",
+    description:
+      "Collaborated with front-end and back-end development teams to create responsive and accessible web and Android applications. Implemented performance optimizations that improved load times by up to 40%.",
+    type: "work",
   },
   {
     id: 2,
     title: "Full Stack Developer",
     organization: "Prilude Studio Indonesia.",
     period: "2023",
-    description: "Developed and maintained multiple web applications using React, Node.js, and PostgreSQL. Collaborated with UX designers to implement intuitive user interfaces. Reduced API response times by 30% through query optimizations.",
-    type: "internship"
+    description:
+      "Developed and maintained multiple web applications using React, Laravel, and MySQL. Collaborated with UX designers to implement intuitive user interfaces. Reduced API response times by up to 30% through query optimization.",
+    type: "internship",
   },
-  
-  // Education
+
   {
     id: 3,
     title: "Vocational high school in software engineering",
     organization: "Daarul Abroor vocational high school",
     period: "2021 - 2024",
-    description: "Specialized in Software Engineering and Machine Learning. Graduated with distinction. Thesis on 'Optimizing Progressive Web Applications for Low-Bandwidth Environments'.",
-    type: "education"
+    description:
+      "A vocational high school graduate, I built a solid foundation in software development, honing my skills in coding, problem-solving, and application development.",
+    type: "education",
   },
 ];
