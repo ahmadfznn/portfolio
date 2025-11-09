@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
           <div className="relative">
             <div className="h-64 w-64 md:h-72 md:w-72 lg:h-80 lg:w-80 rounded-full overflow-hidden ring-4 ring-accent-purple/30 animate-float">
               <img
-                src="ahmad.png"
+                src="ahmad.jpg"
                 alt="Ahmad - Software Developer"
                 className="object-cover w-full h-full"
               />
